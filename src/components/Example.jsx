@@ -9,7 +9,6 @@ const Example = (props) => {
         console.log("useEffect function")
         if(isClicked === "true"){
             console.log("button was clicked, isClicked: ", isClicked)
-            // fetch('https://swapi.dev/api/people/')
             fetch('https://pokeapi.co/api/v2/pokemon/?limit=1200')
             .then(res => {
                 return res.json()
